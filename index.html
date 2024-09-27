@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- icons -->
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+		<!-- fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="app.css" />
+		<title>Salary Calculator</title>
+	</head>
+	<body>
+		<main>
+			<div class="container">
+				<div class="calc_box">
+					<div class="calc_head">salary calculator</div>
+					<!-- tabs -->
+					<div class="hike_amount_tabs">
+						<p class="ha_tab by_hike_tab tab_active">by hike %</p>
+						<p class="ha_tab by_amt_tab">by amount</p>
+					</div>
+					<!-- common input output -->
+					<div class="input_output_wrap">
+						<!-- hike inputs -->
+						<div class="hike_inp_out">
+							<!-- current sal -->
+							<div class="form_input_wrap">
+								<label for="current_salary" class="form_label"
+									>current salary</label
+								>
+								<input
+									type="number"
+									name="current_salary"
+									id="current_salary"
+									class="form_input"
+									placeholder="150,000" />
+								<!-- <small class="input_err" id="curr_sal_err"
+									>Please enter your current salary</small
+								> -->
+							</div>
+							<!-- increment percent input -->
+							<div class="form_input_wrap hike_input_wrap">
+								<label for="" class="form_label">hike %</label>
+								<!-- pre defined increment percent -->
+								<div class="pre_defined_incr_perc">
+									<p class="pre_d_percent" data-number="5">5%</p>
+									<p class="pre_d_percent" data-number="10">10%</p>
+									<p class="pre_d_percent" data-number="15">15%</p>
+									<p class="pre_d_percent" data-number="20">20%</p>
+									<p class="pre_d_percent" data-number="25">25%</p>
+									<p class="pre_d_percent" data-number="30">30%</p>
+									<p class="pre_d_percent" data-number="40">40%</p>
+									<p class="pre_d_percent" data-number="50">50%</p>
+									<p class="pre_d_percent" data-number="70">70%</p>
+									<p class="pre_d_percent" data-number="100">100%</p>
+								</div>
+								<input
+									type="number"
+									value=""
+									name="increment_percent"
+									id="increment_percent"
+									class="form_input"
+									placeholder="40" />
+								<!-- <small class="input_err" id="hike_err"
+									>Please enter a hike value</small
+								> -->
+							</div>
+							<!-- new salary input -->
+							<div class="form_input_wrap new_salary_input_wrap">
+								<label for="new_salary_inp" class="form_label"
+									>new salary</label
+								>
+								<input
+									type="number"
+									name="new_salary_inp"
+									id="new_salary_inp"
+									class="form_input"
+									placeholder="250,000" />
+							</div>
+							<!-- calculate button -->
+							<div class="calculate_btn">calculate</div>
+							<!-- salary output -->
+							<div class="salary_output_wrap">
+								<!-- increment amount -->
+								<div class="salary_output by_hike">
+									<p class="salary_output_label">increment amt</p>
+									<p class="salary_figure" id="increment_amt">-- --</p>
+								</div>
+								<!-- new salary -->
+								<div class="salary_output by_hike">
+									<p class="salary_output_label new_sal_label">new salary</p>
+									<p class="salary_figure" id="new_salary">-- --</p>
+								</div>
+								<!-- daily salary -->
+								<div class="salary_output by_hike">
+									<p class="salary_output_label">daily</p>
+									<p class="salary_figure" id="daily_salary">-- --</p>
+								</div>
+								<!-- bi-weekly salary -->
+								<div class="salary_output by_hike">
+									<p class="salary_output_label">bi-weekly</p>
+									<p class="salary_figure" id="biweekly_salary">-- --</p>
+								</div>
+								<!-- monthly salary -->
+								<div class="salary_output by_hike">
+									<p class="salary_output_label">monthly</p>
+									<p class="salary_figure" id="monthly_salary">-- --</p>
+								</div>
+								<!-- hike percent -->
+								<div class="salary_output by_amt">
+									<p class="salary_output_label new_sal_label">
+										you received a hike of:
+									</p>
+									<p class="salary_figure" id="hike_percent">-- --</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- reset btn -->
+					<div class="reset_btn_wrap">
+						<span class="material-symbols-outlined reset_btn"> refresh </span>
+						<span class="reset_text">reset app</span>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+			integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"></script>
+		<script src="app.js"></script>
+	</body>
+</html>
