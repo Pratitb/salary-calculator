@@ -97,22 +97,22 @@ $(document).ready(function () {
 	}
 
 	// calculate daily
-	function dailyAmt() {
-		let dailyAmt = (+App.$newSalary / 365).toFixed(0);
-		let formatDaily = formatNumber(+dailyAmt);
-		// console.log(formatDaily);
+	// function dailyAmt() {
+	// 	let dailyAmt = (+App.$newSalary / 365).toFixed(0);
+	// 	let formatDaily = formatNumber(+dailyAmt);
+	// 	// console.log(formatDaily);
 
-		$('#daily_salary').html(formatDaily);
-	}
+	// 	// $('#daily_salary').html(formatDaily);
+	// }
 
 	// calculate bi-weekly
-	function biWeeklyAmt() {
-		let biWeeklyAmt = (+App.$newSalary / 26).toFixed(0);
-		let formatBiWeekly = formatNumber(+biWeeklyAmt);
-		// console.log(formatBiWeekly);
+	// function biWeeklyAmt() {
+	// 	let biWeeklyAmt = (+App.$newSalary / 26).toFixed(0);
+	// 	let formatBiWeekly = formatNumber(+biWeeklyAmt);
+	// 	// console.log(formatBiWeekly);
 
-		$('#biweekly_salary').html(formatBiWeekly);
-	}
+	// 	// $('#biweekly_salary').html(formatBiWeekly);
+	// }
 
 	// calculate monthly
 	function monthlyAmt() {
@@ -165,8 +165,8 @@ $(document).ready(function () {
 		if (byHikeBtn.hasClass('tab_active')) {
 			IncreAmt();
 			newSalary();
-			dailyAmt();
-			biWeeklyAmt();
+			// dailyAmt();
+			// biWeeklyAmt();
 			monthlyAmt();
 		} else {
 			calculateByAmt();
